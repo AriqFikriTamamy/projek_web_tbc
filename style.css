@@ -1,0 +1,117 @@
+@font-face {
+    font-family:'Gotham Medium' ;
+    src: url('gotham/Gotham\ Fonts\ Family/GothamNarrow-Medium.otf') format('otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+html body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html body .container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 15px;
+    background-color: #3A9DF1;
+    /* border-radius: 10px; */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container .navbar .nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar .nav-logo .image-logo{
+    width: 60px;
+    height: 71px;
+}
+
+.navbar .nav-logo .text-logo{
+    margin-left: 5px;
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+    font-family: 'Gotham Medium', sans-serif;
+}
+
+.container .navbar .nav-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 26px;
+    list-style: none;
+    /* font-size: 26px; */
+    /* font-weight: 400; */
+    line-height: 100%;
+    letter-spacing: 0;
+    cursor: pointer;
+
+}
+
+.nav-list li a{
+    font-size: 26px;
+    font-weight: 400;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.nav-list #navbar-selected {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    color: #ffff;
+}
+
+.navbar .nav-button{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.navbar .nav-button button{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 122px;
+    height: 53px;
+    border-radius: 35px;
+    border: 1px solid #ffff;
+    font-weight: 700;
+    font-size: 26px;
+    cursor: pointer;
+    color:  #3A9DF1;
+    background-color: #ffff;
+}
+
+.nav-button #location-button{
+    color: #ffff;
+    background-color: #3A9DF1;
+}
+
+.nav-button #contact-button{
+    margin-right: 10px;
+}
